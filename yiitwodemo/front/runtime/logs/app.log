@@ -1,0 +1,106 @@
+2014-05-13 14:56:13 [127.0.0.1][-][qfbfapmt4thv07jev15ihmeus1][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'GD with FreeType or ImageMagick PHP extensions are required.' in /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/captcha/Captcha.php:146
+Stack trace:
+#0 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/captcha/Captcha.php(67): yii\captcha\Captcha::checkRequirements()
+#1 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Object.php(106): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/di/Container.php(365): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('yii\captcha\Cap...', Array, Array)
+#5 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/BaseYii.php(341): yii\di\Container->get('yii\captcha\Cap...', Array, Array)
+#6 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Widget.php(96): yii\BaseYii::createObject(Array)
+#7 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/widgets/ActiveField.php(654): yii\base\Widget::widget(Array)
+#8 /var/www/html/composeryiitwo/basic/views/site/contact.php(49): yii\widgets\ActiveField->widget('yii\captcha\Cap...', Array)
+#9 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/View.php(313): require('/var/www/html/c...')
+#10 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/View.php(245): yii\base\View->renderPhpFile('/var/www/html/c...', Array)
+#11 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/View.php(147): yii\base\View->renderFile('/var/www/html/c...', Array, Object(app\controllers\SiteController))
+#12 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Controller.php(362): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#13 /var/www/html/composeryiitwo/basic/controllers/SiteController.php(88): yii\base\Controller->render('contact', Array)
+#14 [internal function]: app\controllers\SiteController->actionContact()
+#15 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/InlineAction.php(54): call_user_func_array(Array, Array)
+#16 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Controller.php(147): yii\base\InlineAction->runWithParams(Array)
+#17 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Module.php(423): yii\base\Controller->runAction('contact', Array)
+#18 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/web/Application.php(82): yii\base\Module->runAction('site/contact', Array)
+#19 /var/www/html/composeryiitwo/basic/vendor/yiisoft/yii2/base/Application.php(353): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /var/www/html/composeryiitwo/basic/web/index.php(12): yii\base\Application->run()
+#21 {main}
+2014-05-13 14:56:13 [127.0.0.1][-][qfbfapmt4thv07jev15ihmeus1][info][application] $_GET = array (
+  'r' => 'site/contact',
+)
+
+$_COOKIE = array (
+  'rrfI_b1d4_saltkey' => 'OqVeTplh',
+  'rrfI_b1d4_lastvisit' => '1399509018',
+  'rrfI_b1d4_ulastactivity' => '9e3aMp9tXT5kf9Em5Pwy9sIglFVvFbEmMEktczSJ7KOIyc16kE+N',
+  'rrfI_b1d4_auth' => 'f952gno8RhZgpwjCdY+71ke5KXWGxfSnf5HozwNJibe5HLElpUZ7wqJFzqGL8Q+HnOlG96VE2LLkIyO8F2tx',
+  'autofill_type' => 'CB',
+  'rrfI_b1d4_visitedfid' => '48',
+  'cookieId' => '3bc3873d4ce44440b7e702b07c98f45c',
+  'sessionId' => 'fe6e09c088d545c4bd51672434c5f8ad',
+  'rrfI_b1d4_forum_lastvisit' => 'D_48_1399515255',
+  'BAIDU_CLB_REFER' => 'http://10.10.99.220/index.php?r=www/index',
+  '-zdm_b5m_com-activeTimes' => '1',
+  '-zdm_b5m_com-lastActiveTime' => '1399546858379',
+  '-gzx_b5m_com-activeTimes' => '3',
+  '-gzx_b5m_com-lastActiveTime' => '1399862404172',
+  '-ucenter_b5m_com-activeTimes' => '3',
+  '-ucenter_b5m_com-lastActiveTime' => '1399883155001',
+  'token' => '9d9ab0f074b5480f8081fc77ebbcaf27',
+  'name' => '""',
+  'nickname' => 'weiyan04',
+  'email' => 'weiyan04@126.com',
+  'login' => 'true',
+  'avatar' => '""',
+  'showname' => 'weiyan04',
+  'count-prod-date' => '224389554',
+  '-pre_b5m_com-activeTimes' => '4',
+  '-pre_b5m_com-lastActiveTime' => '1399888410960',
+  'rrfI_b1d4_sid' => 'H5A9F9',
+  'rrfI_b1d4_lip' => '180.169.85.190,1399961488',
+  'rrfI_b1d4_lastact' => '1399961498	lottery.php	day',
+  'Hm_lvt_12f262996fc81e00f6abfc009a515ac9' => '1399543338,1399690256,1399690258,1399957580',
+  'Hm_lpvt_12f262996fc81e00f6abfc009a515ac9' => '1399961500',
+  '__auc' => 'c98dbc78145d99bfdefe9aae3f6',
+  '-www_b5m_com-activeTimes' => '4',
+  '-www_b5m_com-lastActiveTime' => '1399961507142',
+  '_csrf' => '5737558e25fa392f9b373e456dfd72964d7815d946b79c09c10ca0ef674e6c3cs:32:"K7ICtYfr5J9VIGylLoqszcT4iTBAvyPP";',
+)
+
+$_SESSION = array (
+  '__flash' => 
+  array (
+  ),
+)
+
+$_SERVER = array (
+  'USER' => 'www',
+  'HOME' => '/home/www',
+  'FCGI_ROLE' => 'RESPONDER',
+  'SCRIPT_FILENAME' => '/var/www/html/composeryiitwo/basic/web/index.php',
+  'QUERY_STRING' => 'r=site/contact',
+  'REQUEST_METHOD' => 'GET',
+  'CONTENT_TYPE' => '',
+  'CONTENT_LENGTH' => '',
+  'SCRIPT_NAME' => '/index.php',
+  'REQUEST_URI' => '/index.php?r=site/contact',
+  'DOCUMENT_URI' => '/index.php',
+  'DOCUMENT_ROOT' => '/var/www/html/composeryiitwo/basic/web',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_SOFTWARE' => 'nginx/1.4.2',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'REMOTE_PORT' => '36586',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'SERVER_NAME' => 'yiibasic.b5m.com',
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'yiibasic.b5m.com',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36',
+  'HTTP_REFERER' => 'http://yiibasic.b5m.com/index.php?r=site/login',
+  'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch',
+  'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,ja;q=0.6,zh-TW;q=0.4',
+  'HTTP_COOKIE' => 'rrfI_b1d4_saltkey=OqVeTplh; rrfI_b1d4_lastvisit=1399509018; rrfI_b1d4_ulastactivity=9e3aMp9tXT5kf9Em5Pwy9sIglFVvFbEmMEktczSJ7KOIyc16kE%2BN; rrfI_b1d4_auth=f952gno8RhZgpwjCdY%2B71ke5KXWGxfSnf5HozwNJibe5HLElpUZ7wqJFzqGL8Q%2BHnOlG96VE2LLkIyO8F2tx; autofill_type=CB; rrfI_b1d4_visitedfid=48; cookieId=3bc3873d4ce44440b7e702b07c98f45c; sessionId=fe6e09c088d545c4bd51672434c5f8ad; rrfI_b1d4_forum_lastvisit=D_48_1399515255; BAIDU_CLB_REFER=http%3A%2F%2F10.10.99.220%2Findex.php%3Fr%3Dwww%2Findex; -zdm.b5m.com-activeTimes=1; -zdm.b5m.com-lastActiveTime=1399546858379; -gzx.b5m.com-activeTimes=3; -gzx.b5m.com-lastActiveTime=1399862404172; -ucenter.b5m.com-activeTimes=3; -ucenter.b5m.com-lastActiveTime=1399883155001; token=9d9ab0f074b5480f8081fc77ebbcaf27; name=""; nickname=weiyan04; email=weiyan04%40126.com; login=true; avatar=""; showname=weiyan04; count-prod-date=224389554; -pre.b5m.com-activeTimes=4; -pre.b5m.com-lastActiveTime=1399888410960; rrfI_b1d4_sid=H5A9F9; rrfI_b1d4_lip=180.169.85.190%2C1399961488; rrfI_b1d4_lastact=1399961498%09lottery.php%09day; Hm_lvt_12f262996fc81e00f6abfc009a515ac9=1399543338,1399690256,1399690258,1399957580; Hm_lpvt_12f262996fc81e00f6abfc009a515ac9=1399961500; __auc=c98dbc78145d99bfdefe9aae3f6; -www.b5m.com-activeTimes=4; -www.b5m.com-lastActiveTime=1399961507142; _csrf=5737558e25fa392f9b373e456dfd72964d7815d946b79c09c10ca0ef674e6c3cs%3A32%3A%22K7ICtYfr5J9VIGylLoqszcT4iTBAvyPP%22%3B',
+  'PHP_SELF' => '/index.php',
+  'REQUEST_TIME_FLOAT' => 1399964173.680469,
+  'REQUEST_TIME' => 1399964173,
+)
